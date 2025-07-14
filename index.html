@@ -1,0 +1,848 @@
+<html lang="en"><head>
+	
+	<!-- Metadados básicos para funcionamento e SEO do site -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alongamentos de Unhas em Gaspar</title>
+    <meta name="description" content="Especialista em alongamento de de alto padrão. Atendimento personalizado com horário agendado. Agende seu horário pelo WhatsApp!">
+    <meta name="keywords" content="alongamento de unhas Gaspar, unhas de fibra Gaspar, blindagem de unhas Gaspar, esmaltação em gel Gaspar, manutenção de unhas Gaspar, decoração de unhas Gaspar, banho de gel Gaspar">
+    <meta name="author" content="Gabi Lima - Nail Studio">
+
+    <!-- Open Graph (Para redes sociais como Facebook e Instagram) -->
+    <meta property="og:title" content="Gabriela Lima Nail Studio">
+    <meta property="og:description" content="Oferecemos serviços de alta qualidade para alongamentos de unhas, blindagem, esmaltação em gel e manutenções, com atendimento personalizado a 2km do centro de Gaspar, no bairro Margem Esquerda. Agende agora pelo WhatsApp!">
+    <meta property="og:image" content="./assets/img/bg3.png">
+    <meta property="og:url" content="https://www.gabilimanails.com.br">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/img/favicon/favcon.png" type="image/x-icon">
+
+    <!-- Schema.org (Para melhorar no Google Search) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Gabi Lima - Nail Studio",
+        "image": "./assets/img/bg3.png",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Norma Mônica Sabel, 810",
+            "addressLocality": "Margem Esquerda",
+            "addressRegion": "Gaspar",
+            "postalCode": "89116-668",
+            "addressCountry": "BR"
+        },
+        "description": "Especialista em alongamento de de alto padrão. Atendimento personalizado com horário agendado.",
+        "telephone": "+55 (47) 99199-0589",
+        "url": "https://www.gabilimanails.com.br",
+        "sameAs": [
+            "https://www.instagram.com/gabilimanailstudio/",
+            "https://wa.me/message/ZMUREVKUCLJDD1"
+        ]
+    }
+    </script>
+
+
+	<!-- ================== BEGIN core-css ================== -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link href="./assets/css/one-page-parallax/vendor.min.css" rel="stylesheet">
+	<link href="./assets/css/one-page-parallax/app.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<!-- ================== END core-css ================== -->
+
+<style>
+@font-face {
+  font-family: 'Brown Sugar';
+  src: url('./assets/fonts/BrownSugar.otf') format('opentype'),
+       url('./assets/fonts/BrownSugar.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+#home .container.home-content h1 {
+  font-family: 'Brown Sugar', 'Open Sans', Arial, sans-serif !important;
+  letter-spacing: 1px;
+  font-weight: 500 !important;
+  -webkit-text-stroke: 0.3px #fff;
+}
+#home {
+  position: relative;
+}
+#home .content-bg {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+#home .content-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  z-index: 2;
+  pointer-events: none;
+}
+#home .container.home-content {
+  position: relative;
+  z-index: 3;
+}
+
+#home .content-bg,
+#home .content-bg::before {
+  height: 550px !important;
+  max-height: 550px !important;
+  min-height: 550px !important;
+}
+
+#home.content.has-bg.home {
+  height: 550px !important;
+  max-height: 550px !important;
+  min-height: 550px !important;
+}
+
+@media (max-width: 768px) {
+  #about .container > div[style*="display: flex"] {
+    flex-direction: column !important;
+    align-items: center !important;
+    min-height: unset !important;
+  }
+  #about .container > div[style*="display: flex"] img {
+    margin: 0 0 20px 0 !important;
+  }
+  #about .container > div[style*="display: flex"] > div {
+    margin-left: 0 !important;
+    max-width: 100% !important;
+  }
+  .galeria-slide.left,
+  .galeria-slide.right {
+    display: none !important;
+  }
+  .galeria-carousel {
+    max-width: 95vw;
+    height: auto;
+  }
+  .galeria-slide.center img {
+    max-width: 100vw;
+    max-height: 60vw;
+  }
+  .galeria-arrow.left { left: 0px !important; }
+  .galeria-arrow.right { right: 0px !important; }
+  .galeria-arrow {
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    width: 54px !important;
+    height: 54px !important;
+    font-size: 2.7rem !important;
+    color: #2d353c !important;
+  }
+}
+
+.galeria-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  height: 350px;
+}
+.galeria-slide {
+  min-width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: transform 0.7s cubic-bezier(.4,0,.2,1), z-index 0.3s;
+}
+.galeria-slide img {
+  max-height: 320px;
+  max-width: 95%;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(.4,0,.2,1), box-shadow 0.3s;
+}
+.galeria-slide.left img,
+.galeria-slide.right img {
+  transform: scale(0.9);
+  filter: brightness(0.8);
+}
+.galeria-slide.center img {
+  transform: scale(1.15);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  z-index: 2;
+}
+.galeria-slide.left::after,
+.galeria-slide.right::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255,255,255,0.5);
+  border-radius: 10px;
+  pointer-events: none;
+}
+.galeria-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.7);
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #2d353c;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.2s;
+}
+.galeria-arrow:hover {
+  background: #fff;
+}
+.galeria-arrow.left { left: 30px; }
+.galeria-arrow.right { right: 30px; }
+
+.animate__animated {
+  animation-duration: 2s !important;
+  -webkit-animation-duration: 1.5s !important;
+}
+
+#pricing .animate__animated {
+  animation-duration: 2s !important;
+  -webkit-animation-duration: 2s !important;
+}
+
+/* Títulos das seções principais */
+.content-title {
+  font-family: 'Brown Sugar', 'Open Sans', Arial, sans-serif !important;
+  font-weight: 500 !important;
+  color: #2d353c !important;
+}
+.content-title::after {
+  content: '';
+  display: block;
+  margin: 16px auto 0 auto;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+#action-box h3 {
+  font-family: 'Brown Sugar', 'Open Sans', Arial, sans-serif !important;
+  font-weight: 500 !important;
+  color: #fff !important;
+}
+
+.fab-floating-group {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0;
+}
+.fab-toggle-arrow {
+  background: none;
+  box-shadow: none;
+  color: #473b25;
+  border: none;
+  outline: none;
+  width: auto;
+  height: auto;
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.fab-toggle-arrow:hover {
+  color: #2d353c;
+  background: none;
+  box-shadow: none;
+}
+.fab-floating {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-end;
+  transition: transform 0.4s cubic-bezier(.4,0,.2,1);
+}
+.fab-floating.fab-hidden {
+  transform: translateX(90px);
+  pointer-events: none;
+  opacity: 0.2;
+}
+.fab-floating a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  transition: box-shadow 0.2s, transform 0.2s;
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+.fab-floating a.whatsapp {
+  background: #25D366;
+}
+.fab-floating a.instagram {
+  background: linear-gradient(45deg, #fd5d5d, #fcae3e 60%, #515bd4 100%);
+}
+.fab-floating a:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.28);
+  transform: scale(1.08);
+}
+@media (max-width: 600px) {
+  .fab-floating-group {
+    right: 12px;
+    bottom: 12px;
+  }
+  .fab-floating.fab-hidden {
+    transform: translateX(60px);
+  }
+  .fab-floating a {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
+  .fab-toggle-arrow {
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+  }
+}
+
+#about .content-title {
+  color: #fff !important;
+  -webkit-text-stroke: 0 !important;
+}
+
+.price-number {
+  font-family: 'Brown Sugar', 'Open Sans', Arial, sans-serif !important;
+}
+</style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#header" data-bs-offset="51" class="pace-done "><div class="pace pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+	<!-- begin #page-container -->
+	<div id="page-container" class="fade show">
+		<!-- begin #header -->
+		<div id="header" class="header navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-sm" style="background-color: #f2e1d2;">
+			<!-- begin container -->
+			<div class="container">
+				<!-- begin navbar-brand -->
+				<a href="index.html" class="navbar-brand">
+					<img src="./assets/img/logo.png">
+				</a>
+				<!-- end navbar-brand -->
+				<!-- begin navbar-toggle -->
+				<button type="button" class="navbar-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#header-navbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- end navbar-header -->
+				<!-- begin navbar-collapse -->
+				<div class="collapse navbar-collapse" id="header-navbar">
+					<ul class="nav navbar-nav navbar-end">
+						<li class="nav-item"><a class="nav-link active" href="#about" data-click="scroll-to-target">Sobre</a></li>
+						<li class="nav-item"><a class="nav-link" href="#work" data-click="scroll-to-target">Galeria</a></li>
+						<li class="nav-item"><a class="nav-link" href="#pricing" data-click="scroll-to-target">Valores</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contact" data-click="scroll-to-target">Contato</a></li>
+					</ul>
+				</div>
+				<!-- end navbar-collapse -->
+			</div>
+			<!-- end container -->
+		</div>
+		<!-- end #header -->
+		
+		<!-- begin #home -->
+		<div id="home" class="content has-bg home" style="height: 465px;">
+			<!-- begin content-bg -->
+			<div class="content-bg" style="background-image: url('./assets/img/bg3.png'); background-position: center top; transform: unset; transition: transform 0.1s; will-change: transform;" data-paroller="true" data-paroller-type="foreground" data-paroller-factor="-0.25">
+			</div>
+			<!-- end content-bg -->
+			<!-- begin container -->
+			<div class="container home-content">
+				<h1>Gabriela Lima Nail Studio</h1>
+				<h3>Um toque a mais na sua beleza.</h3>
+				<h5>Há 7 anos renovando auto-estimas.</h5>
+				<p style="opacity: 1; color: #fff; background: none;">
+					Especialista em unhas de alto padrão: alongamentos em fibra de vidro e acrílico, banho de gel, blindagem, esmaltação em gel.<br>
+					Atendimento personalizado com horário agendado.
+				</p>
+				<a style="background-color: #f2e1d2;  color: #000;" href="https://wa.me/message/ZMUREVKUCLJDD1" class="btn btn-theme btn-primary">Agende Agora</a>
+			</div>
+			<!-- end container -->
+		</div>
+		<!-- end #home -->
+		
+		<!-- begin #about -->  
+		<section id="about" class="content" data-scrollview="true" style="background: #2d353c;">
+			<div class="container" data-animation="true" data-animation-type="animate__fadeInDown">
+				<h2 class="content-title" style="color: #fff;">Sobre</h2>
+				<div style="display: flex; align-items: center; justify-content: center; min-height: 8cm;">
+					<img src="./assets/img/sobre.png" alt="Foto Gabriela Lima" style="height: 7cm; width: auto; display: block; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
+					<div style="margin-left: 2cm; text-align: justify; max-width: 500px; color: #fff;">
+						<p style="margin-bottom: 0; font-size: 1rem !important; line-height: 1.6; color: #fff;">
+							Me chamo Gabriela Lima, sou nail designer há 7 anos e formada master instrutora pela marca internacional JC Beauty Concepts. Com mais de 20 certificações nacionais e internacionais, me dedico a oferecer resultados que aliam naturalidade e durabilidade, valorizando a beleza única de cada cliente. Como especialista em unhas de alto padrão, meu compromisso é proporcionar resultados impecáveis, sempre priorizando a saúde das suas unhas e o seu bem-estar. Cada detalhe é pensado com carinho para que você tenha a melhor experiência e saia com unhas perfeitas e duradouras.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end #about -->
+	
+		<!-- begin #quote -->
+		  
+		<!-- end #quote -->
+		
+		<!-- begin #service -->
+		<div id="work" class="content" data-scrollview="true">
+			<div class="container" data-animation="true" data-animation-type="animate__fadeInLeft">
+				<h2 class="content-title">Galeria</h2>
+				<p class="content-desc">
+					Veja de perto a beleza e o cuidado em cada trabalho. Nossa galeria reúne fotos autênticas de clientes que confiaram no nosso talento para transformar suas unhas em verdadeiras joias.
+				</p>
+				<div id="galeria-carousel" class="galeria-carousel">
+					<button class="galeria-arrow left" onclick="prevGaleria()" aria-label="Anterior">&#8249;</button>
+					<!-- slides serão inseridos via JS -->
+					<button class="galeria-arrow right" onclick="nextGaleria()" aria-label="Próxima">&#8250;</button>
+				</div>
+			</div>
+		</div>
+		<!-- end #service -->
+		
+		<!-- beign #action-box -->
+		<div id="action-box" class="content has-bg" data-scrollview="true" style="background: #2d353c;">
+			<!-- begin content-bg -->
+			<div class="content-bg" style="background-image: url(./assets/img/bg/bg-action.jpg)" data-paroller-factor="0.5" data-paroller-factor-md="0.01" data-paroller-factor-xs="0.01">
+			</div>
+			<!-- end content-bg -->
+			<!-- begin container -->
+			<div class="container" data-animation="true" data-animation-type="animate__fadeInRight">
+				<!-- begin row -->
+				<div class="row action-box">
+					<!-- begin col-9 -->
+					<div class="col-lg-9">
+						<div class="icon-large text-theme">
+							<i class="fa fa-calendar-check" style="color: #f2e1d2;"></i>
+						</div>
+						<h3>Agende Seu Horário Agora!</h3>
+						<p>
+							Sua experiência de beleza começa com um agendamento. Garanta seu horário para cuidar de você com todo o carinho e excelência que você merece.
+						</p>
+					</div>
+					<!-- end col-9 -->
+					<!-- begin col-3 -->
+					<div class="col-lg-3">
+						<a style="background-color: #f2e1d2;  color: #000;" href="https://wa.me/message/ZMUREVKUCLJDD1" class="btn btn-outline-white btn-theme btn-block" target="_blank">Agende Agora</a>
+					</div>
+					<!-- end col-3 -->
+				</div>
+				<!-- end row -->
+			</div>
+			<!-- end container -->
+		</div>
+		
+		<!-- end #action-box -->
+		
+		<!-- begin #pricing -->
+		<div id="pricing" class="content" data-scrollview="true">
+			<!-- begin container -->
+			<div class="container" data-animation="true" data-animation-type="animate__fadeInUp">
+				<h2 class="content-title">Serviços e Valores</h2>
+				<p class="content-desc">
+					Descubra nossos serviços de alongamento de unhas e escolha o que combina com você. Trabalhamos com materiais de alto padrão e técnicas que garantem naturalidade, durabilidade e elegância. Confira nossos valores e agende seu momento de autocuidado!
+				</p>
+				<!-- begin pricing-table -->
+				<ul class="pricing-table">
+					<!-- First Row -->
+					<li data-animation="true" data-animation-type="animate__fadeInUp" class="col-md-3 animate__fadeInUp contentAnimated finishAnimated">
+						<div class="pricing-container">
+							<div class="service-image">
+								<img src="./assets/img/acriliconatural.png" alt="Acrílico Natural" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0;">
+							</div>
+							<h3 style="background-color: #473b25;">ACRÍLICO NATURAL</h3>
+							<div class="price" style="background-color: #f2e1d2;">
+								<div class="price-figure">
+									<span class="price-number" style="color:#000">R$ 185</span>
+								</div>
+							</div>
+							<ul class="features">
+								<li>Alongamento em uma única cor, feito no sistema acrílico. Não necessita ir na cabine.</li>
+								<li>Duração: 1h30 á 2h.</li>
+								<li>Formatos: Quadrado e Almond.</li>
+								<li>Incluso cutícula e esmaltação em gel.</li>
+							</ul>
+							<div class="footer" style="background-color: #473b25;">
+								<a style="background-color: #f2e1d2;  color: #000;" href="https://wa.me/message/ZMUREVKUCLJDD1" class="btn btn-inverse btn-theme btn-block">Agende Agora</a>
+							</div>
+						</div>
+					</li>
+					<li data-animation="true" data-animation-type="animate__fadeInUp" class="col-md-3 animate__fadeInUp contentAnimated finishAnimated">
+						<div class="pricing-container">
+							<div class="service-image">
+								<img src="./assets/img/babyboomer.png" alt="Acrílico Baby Boomer" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0;">
+							</div>
+							<h3 style="background-color: #473b25;">ACRÍLICO BABY BOOMER</h3>
+							<div class="price" style="background-color: #f2e1d2;">
+								<div class="price-figure">
+									<span class="price-number" style="color:#000">R$ 185</span>
+								</div>
+							</div>
+							<ul class="features">
+								<li>Alongamento em duas cores degradê, feito no sistema acrílico. Não necessita ir na cabine.</li>
+								<li>Duração: 1h30 á 2h.</li>
+								<li>Formatos: Quadrado e Almond.</li>
+								<li>Incluso cutícula.</li>
+							</ul>
+							<div class="footer" style="background-color: #473b25;">
+								<a style="background-color: #f2e1d2;  color: #000;" href="https://wa.me/message/ZMUREVKUCLJDD1" class="btn btn-inverse btn-theme btn-block">Agende Agora</a>
+							</div>
+						</div>
+					</li>
+					<li data-animation="true" data-animation-type="animate__fadeInUp" class="col-md-3 animate__fadeInUp contentAnimated finishAnimated">
+						<div class="pricing-container">
+							<div class="service-image">
+								<img src="./assets/img/fibranatural.png" alt="Fibra de Vidro Natural" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0;">
+							</div>
+							<h3 style="background-color: #473b25;">FIBRA DE VIDRO NATURAL</h3>
+							<div class="price" style="background-color: #f2e1d2;">
+								<div class="price-figure">
+									<span class="price-number" style="color:#000">R$ 195</span>
+								</div>
+							</div>
+							<ul class="features">
+								<li>Alongamento em uma única cor feito no sistema gel, utilizando fibra de vidro como extensor.</li>
+								<li>Duração: 1h30 á 2h.</li>
+								<li>Formatos: Quadrado e Almond.</li>
+								<li>Incluso cutícula e esmaltação em gel.</li>
+							</ul>
+							<div class="footer" style="background-color: #473b25;">
+								<a style="background-color: #f2e1d2;  color: #000;" href="https://wa.me/message/ZMUREVKUCLJDD1" class="btn btn-inverse btn-theme btn-block">Agende Agora</a>
+							</div>
+						</div>
+					</li>
+					<li data-animation="true" data-animation-type="animate__fadeInUp" class="col-md-3 animate__fadeInUp contentAnimated finishAnimated">
+						<div class="pricing-container">
+							<div class="service-image">
+								<img src="./assets/img/fibracamuflada.png" alt="Fibra com Borda Camuflada" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0;">
+							</div>
+							<h3 style="background-color: #473b25;">FIBRA COM BORDA CAMUFLADA</h3>
+							<div class="price" style="background-color: #f2e1d2;">
+								<div class="price-figure">
+									<span class="price-number" style="color:#000">R$ 195</span>
+								</div>
+							</div>
+							<ul class="features">
+								<li>Alongamento com borda leitosa, feito no sistema gel, utilizando fibra de vidro como extensor.</li>
+								<li>Duração: 1h30 á 2h.</li>
+								<li>Formatos: Quadrado e Almond.</li>
+								<li>Incluso cutícula.</li>
+							</ul>
+							<div class="footer" style="background-color: #473b25;">
+								<a style="background-color: #f2e1d2;  color: #000;" href="https://wa.me/message/ZMUREVKUCLJDD1" class="btn btn-inverse btn-theme btn-block">Agende Agora</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="pricing-table">
+					<li data-animation="true" data-animation-type="animate__fadeInUp" class="col-md-3 animate__fadeInUp contentAnimated finishAnimated">
+						<div class="pricing-container">
+							<div class="service-image">
+								<img src="./assets/img/fibrarealista.png" alt="Fibra Hiper-realista" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0;">
+							</div>
+							<h3 style="background-color: #473b25;">FIBRA HIPER-REALISTA</h3>
+							<div class="price" style="background-color: #f2e1d2;">
+								<div class="price-figure">
+									<span class="price-number" style="color:#000">R$ 195</span>
+								</div>
+							</div>
+							<ul class="features">
+								<li>Alongamento que simula a cor da unha natural, feito no sistema gel, utilizando fibra de vidro como extensor.</li>
+								<li>Duração: 1h30 á 2h.</li>
+								<li>Formatos: Quadrado e Almond.</li>
+								<li>Incluso cutícula.</li>
+							</ul>
+							<div class="footer" style="background-color: #473b25;">
+								<a style="background-color: #f2e1d2;  color: #000;" href="https://wa.me/message/ZMUREVKUCLJDD1" class="btn btn-inverse btn-theme btn-block">Agende Agora</a>
+							</div>
+						</div>
+					</li>
+				
+					<li data-animation="true" data-animation-type="animate__fadeInUp" class="col-md-3 animate__fadeInUp contentAnimated finishAnimated">
+						<div class="pricing-container">
+							<div class="service-image">
+								<img src="./assets/img/banhogel.png" alt="Banho de Gel/Acrílico" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0;">
+							</div>
+							<h3 style="background-color: #473b25;">BANHO DE GEL/ACRÍLICO</h3>
+							<div class="price" style="background-color: #f2e1d2;">
+								<div class="price-figure">
+									<span class="price-number" style="color:#000">R$ 160</span>
+								</div>
+							</div>
+							<ul class="features">
+								<li>Feito sobre a unha natural. A cliente escolhe o sistema (gel ou acrílico).</li>
+								<li>Não é alongamento.</li>
+								<li>Duração: 1h30 á 2h.</li>
+								<li>Incluso cutícula e Esmaltação em Gel.</li>
+							</ul>
+							<div class="footer" style="background-color: #473b25;">
+								<a style="background-color: #f2e1d2;  color: #000;" href="https://wa.me/message/ZMUREVKUCLJDD1" class="btn btn-inverse btn-theme btn-block">Agende Agora</a>
+							</div>
+						</div>
+					</li>
+					<li data-animation="true" data-animation-type="animate__fadeInUp" class="col-md-3 animate__fadeInUp contentAnimated finishAnimated">
+						<div class="pricing-container">
+							<div class="service-image">
+								<img src="./assets/img/esmaltacaogel.png" alt="Esmaltação em Gel" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0;">
+							</div>
+							<h3 style="background-color: #473b25;">ESMALTAÇÃO EM GEL</h3>
+							<div class="price" style="background-color: #f2e1d2;">
+								<div class="price-figure">
+									<span class="price-number" style="color:#000">R$ 120</span>
+								</div>
+							</div>
+							<ul class="features">
+								<li>Blindagem + esmaltação em gel, feitas sobre a unha natural da cliente.</li>
+								<li>Durabilidade de até 25 dias.</li>
+								<li>Duração: 1h a 1h30.</li>
+								<li>Incluso cutícula.</li>
+							</ul>
+							<div class="footer" style="background-color: #473b25;">
+								<a style="background-color: #f2e1d2;  color: #000;" href="https://wa.me/message/ZMUREVKUCLJDD1" class="btn btn-inverse btn-theme btn-block">Agende Agora</a>
+							</div>
+						</div>
+					</li>
+					<li data-animation="true" data-animation-type="animate__fadeInUp" class="col-md-3 animate__fadeInUp contentAnimated finishAnimated">
+						<div class="pricing-container">
+							<div class="service-image">
+								<img src="./assets/img/nailart.png" alt="Nail Art" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0;">
+							</div>
+							<h3 style="background-color: #473b25;">NAIL ARTS</h3>
+							<div class="price" style="background-color: #f2e1d2;">
+								<div class="price-figure">
+									<span class="price-number" style="color:#000">R$ 10</span>
+								</div>
+							</div>
+							<ul class="features">
+								<li>Adesivos artesanais, pedrarias, artes encapsuladas, flores 3D, efeito cromado e decorações minimalistas feitas à mão livre.</li>
+								<li>Escolha a que mais combina com seu estilo.</li>
+								<li>Valores a partir de R$ 10,00, cobrados à parte.</li>
+							</ul>
+							<div class="footer" style="background-color: #473b25;">
+								<a style="background-color: #f2e1d2;  color: #000;" href="https://wa.me/message/ZMUREVKUCLJDD1" class="btn btn-inverse btn-theme btn-block">Agende Agora</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<p class="content-desc">
+					Serviços extras como remoção de alongamento, decorações ou reposição de unhas quebradas, serão cobradas à parte.
+				</p>
+			</div>
+			<!-- end container -->
+		</div>
+			
+		<!-- end #pricing -->
+		
+		<!-- begin #contact -->
+		<div id="contact" class="content bg-light" data-scrollview="true">
+			<!-- begin container -->
+			<div class="container">
+				<h2 class="content-title">Entre em Contato</h2>
+				<p class="content-desc">
+					Tem dúvidas, quer agendar um horário ou saber mais sobre os serviços? Estou pronta para te atender com carinho e agilidade. Entre em contato pelo whatsapp e vamos alinhar o melhor horário pro seu atendimento!
+				</p>
+				<!-- begin row -->
+				<div class="row">
+					<div class="col-lg-6" data-animation="true" data-animation-type="animate__fadeInRight">
+						<h3>Estamos prontos para atender você!</h3>
+						<p>
+							Para um atendimento personalizado, agende seu horário conosco pelo WhatsApp. 
+						</p>
+						<p>
+							<span class="phone">(47) 99199-0589</span><br>
+							<a href="https://wa.me/message/ZMUREVKUCLJDD1" class="text-theme" target="_blank">
+								<i class="fa-brands fa-whatsapp" style="color: #25D366; font-size: 20px; margin-right: 10px;"></i>
+								Entre em contato pelo WhatsApp.
+							</a>
+						</p>
+						<p>
+							<a href="https://www.instagram.com/gabilimanailstudio/" class="text-theme" target="_blank">
+								<i class="fa-brands fa-instagram" style="color: #E4405F; font-size: 20px; margin-right: 10px;"></i>
+								Siga no Instagram.
+							</a>
+						</p>
+					</div>
+					<!-- begin col-6 -->
+					<div class="col-lg-6" data-animation="true" data-animation-type="animate__fadeInLeft">
+						<h3>Seu momento de beleza começa aqui. Entre em contato e dê o primeiro passo para ter unhas incríveis!</h3>
+						<p>
+							Estamos localizados a 2km do centro de Gaspar, no seguinte endereço:<br>
+							Rua Norma Mônica Sabel, 810 - Margem Esquerda<br>
+							Gaspar, SC - CEP 89116-668<br>
+							<br>
+							<strong>Horário de Atendimento:</strong><br>
+							Sábados e Domingos: 09:00 - 22:00 (Útimo horário às 20h)<br>
+							Segunda a Sexta-feira: Fechado!<br>
+						</p>
+						<div id="map" style="width: 100%; height: 300px; border-radius: 10px;">
+							<!-- Google Maps gratuito com link direto -->
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.1234567890123!2d-48.959999999999994!3d-26.933333333333334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df1a2b3c4d5e6f%3A0x1234567890abcdef!2sRua%20Norma%20M%C3%B4nica%20Sabel%2C%20810%20-%20Margem%20Esquerda%2C%20Gaspar%20-%20SC%2C%2089116-668!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+					<!-- end col-6 -->
+					<!-- end col-6 -->
+				</div>
+				<!-- end row -->
+			</div>
+			<!-- end container -->
+		</div>
+		<!-- end #contact -->
+		
+	</div>
+	<!-- end #page-container -->
+	
+<!-- ================== BEGIN BASE JS ================== -->
+	<script src="./assets/js/one-page-parallax/vendor.min.js"></script>
+	<script src="./assets/js/one-page-parallax/app.min.js"></script>
+	
+<script>
+const galeriaImgs = [
+  './assets/img/galeria1.png',
+  './assets/img/galeria2.png',
+  './assets/img/galeria3.png',
+  './assets/img/galeria4.png',
+  './assets/img/galeria5.png',
+  './assets/img/galeria6.png',
+  './assets/img/galeria7.png',
+  './assets/img/galeria8.png',
+  './assets/img/galeria9.png',
+  './assets/img/galeria10.png',
+  './assets/img/galeria11.png',
+  './assets/img/galeria12.png',
+  './assets/img/galeria13.png',
+  './assets/img/galeria14.png',
+  './assets/img/galeria15.png',
+  './assets/img/galeria16.png',
+  './assets/img/galeria17.png',
+  './assets/img/galeria18.png',
+  './assets/img/galeria19.png',
+  './assets/img/galeria20.png',
+  './assets/img/galeria21.png',
+  './assets/img/galeria22.png',
+  './assets/img/galeria23.png',
+  './assets/img/galeria24.png'
+];
+let galeriaIndex = 0;
+const galeriaCarousel = document.getElementById('galeria-carousel');
+let galeriaInterval;
+function updateGaleriaCarousel() {
+  const left = (galeriaIndex - 1 + galeriaImgs.length) % galeriaImgs.length;
+  const center = galeriaIndex;
+  const right = (galeriaIndex + 1) % galeriaImgs.length;
+  galeriaCarousel.innerHTML = `
+    <button class='galeria-arrow left' onclick='prevGaleria()' aria-label='Anterior'>&#8249;</button>
+    <div class='galeria-slide left'><img src='${galeriaImgs[left]}' alt='Galeria'></div>
+    <div class='galeria-slide center'><img src='${galeriaImgs[center]}' alt='Galeria'></div>
+    <div class='galeria-slide right'><img src='${galeriaImgs[right]}' alt='Galeria'></div>
+    <button class='galeria-arrow right' onclick='nextGaleria()' aria-label='Próxima'>&#8250;</button>
+  `;
+}
+function nextGaleria() {
+  galeriaIndex = (galeriaIndex + 1) % galeriaImgs.length;
+  updateGaleriaCarousel();
+}
+function prevGaleria() {
+  galeriaIndex = (galeriaIndex - 1 + galeriaImgs.length) % galeriaImgs.length;
+  updateGaleriaCarousel();
+}
+function startGaleriaInterval() {
+  galeriaInterval = setInterval(nextGaleria, 3000);
+}
+function stopGaleriaInterval() {
+  clearInterval(galeriaInterval);
+}
+galeriaCarousel.addEventListener('mouseenter', stopGaleriaInterval);
+galeriaCarousel.addEventListener('mouseleave', startGaleriaInterval);
+updateGaleriaCarousel();
+startGaleriaInterval();
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const animatedEls = document.querySelectorAll('[data-animation="true"]');
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const anim = el.getAttribute('data-animation-type');
+        el.classList.add('animate__animated', anim);
+        obs.unobserve(el);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  animatedEls.forEach(el => {
+    observer.observe(el);
+  });
+});
+</script>
+
+<!-- Botões flutuantes WhatsApp e Instagram com seta -->
+<div class="fab-floating-group">
+  <button class="fab-toggle-arrow" id="fabToggleBtn" aria-label="Mostrar/Ocultar botões">
+    <span id="fabArrow">&#8249;</span>
+  </button>
+  <div class="fab-floating" id="fabFloating">
+    <a href="https://wa.me/message/ZMUREVKUCLJDD1" class="whatsapp" target="_blank" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="https://www.instagram.com/gabilimanailstudio/" class="instagram" target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+  </div>
+</div>
+<script>
+const fabToggleBtn = document.getElementById('fabToggleBtn');
+const fabFloating = document.getElementById('fabFloating');
+const fabArrow = document.getElementById('fabArrow');
+let fabHidden = false;
+function updateFabArrow() {
+  fabArrow.innerHTML = fabHidden ? '&#8249;' : '&#8250;';
+}
+fabToggleBtn.addEventListener('click', function() {
+  fabHidden = !fabHidden;
+  if (fabHidden) {
+    fabFloating.classList.add('fab-hidden');
+  } else {
+    fabFloating.classList.remove('fab-hidden');
+  }
+  updateFabArrow();
+});
+updateFabArrow();
+</script>
+
+</body></html>
