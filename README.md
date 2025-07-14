@@ -1,6 +1,6 @@
 # 🌟 Site Gabriela Lima Nail Studio
 
-📌 Sobre o Projeto
+## 📌 Sobre o Projeto
 Este é o site oficial do Gabriela Lima Nail Studio, um estúdio especializado em alongamento de unhas localizado em Gaspar, SC.
 O site foi desenvolvido para oferecer uma experiência moderna, intuitiva e responsiva, facilitando o contato dos clientes e a divulgação dos serviços.
 
@@ -38,7 +38,7 @@ Site/
 - Abra o arquivo index.html no navegador para visualizar o site localmente
 - Para editar estilos ou scripts, acesse a pasta assets/
 
-📢 Considerações Finais
+## 📢 Considerações Finais
 Este projeto visa fortalecer a presença digital do Gabriela Lima Nail Studio, facilitando o acesso dos clientes aos serviços e contatos do estúdio.
 
 
