@@ -34,7 +34,7 @@ Site/
 - **Endereço:** Rua Norma Mônica Sabel, 810 - Margem Esquerda, Gaspar, SC
 
 ## 📌 Como usar este repositório
-- Clone o repositório com git clone <URL_DO_REPOSITÓRIO>
+- Clone o repositório com git clone (https://github.com/gabriela-s-lima/studio_gabilima)
 - Abra o arquivo index.html no navegador para visualizar o site localmente
 - Para editar estilos ou scripts, acesse a pasta assets/
 
